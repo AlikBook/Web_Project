@@ -1,0 +1,65 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+a{
+    text-decoration: none; 
+    color: white;
+    padding: 5px;   
+}
+a:hover{
+    color: #FE9063;
+}
+nav{
+    background-color: #27C7D4;
+    font-size: 2vw;
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Ajustez la largeur selon vos besoins */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  font-size: 2.5vw;
+}
+
+footer{
+    background-color:#EA5863;
+    color: white;
+    padding: 5px;
+    text-align: center;
+   
+}
+
+#logo {
+  width: 150px;
+  height: 50px;
+  position :sticky;
+}
