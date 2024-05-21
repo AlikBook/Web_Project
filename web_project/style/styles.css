@@ -110,3 +110,35 @@ fieldset input[type="text"], input[type="email"], input[type="tel"], input[type=
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+/*Home Ivan*/
+
+
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+#section1{
+  justify-content: center;
+  display: flex;
+}
+section p{
+  text-align: center;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#section2{
+  justify-content: center;
+  display: flex;
+}
+section img{
+  width: 50%;
+  height: auto;
+  border-radius: 3%;
+}
+#list_home ol{
+  text-align: left;
+}
+#list_home ol li{
+  padding: 1%;
+}
