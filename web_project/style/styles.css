@@ -12,17 +12,22 @@ h6 {
   text-align: center;
 }
 
-a{
-    text-decoration: none; 
-    color: white;
-    padding: 5px;   
+nav {
+  font-weight: bold;
+  padding: 10px;
+
 }
-a:hover{
-    color: #FE9063;
+a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
 }
-nav{
-    background-color: #27C7D4;
-    font-size: 2vw;
+a:hover {
+  color: grey;
+}
+nav {
+  background-color: #27c7d4;
+  font-size: 2vw;
 }
 
 header {
@@ -32,7 +37,8 @@ header {
 
 .image-container {
   position: relative;
-  width: 100%; /* Ajustez la largeur selon vos besoins */
+  width: 100%;
+
 }
 
 .image-container img {
@@ -50,16 +56,24 @@ header {
   font-size: 2.5vw;
 }
 
-footer{
-    background-color:#EA5863;
-    color: white;
-    padding: 5px;
-    text-align: center;
-   
+footer {
+  background-color: #ea5863;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.5vw;
 }
 
 #logo {
-  width: 150px;
-  height: 50px;
-  position :sticky;
+    width: 150px;
+    height: 50px;
+    position: sticky;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+#logo:hover {
+  transform: scale(1.1);
 }
+
