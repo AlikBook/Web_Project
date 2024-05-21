@@ -77,3 +77,36 @@ footer {
   transform: scale(1.1);
 }
 
+/* Reservations style*/ 
+
+.form {
+  font-family: "Roboto", sans-serif;
+}
+
+fieldset{
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  }
+
+.form-presentation{
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color:#27c7d4; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+
+}
+
+fieldset input[type="text"], input[type="email"], input[type="tel"], input[type="date"]{ 
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
