@@ -145,3 +145,45 @@ section img{
 #list_home ol li{
   padding: 1%;
 }
+/*Activities*/
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-decoration: underline;
+}
+
+.image-container2 {
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.image-container2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  font-size: x-large;
+  font-family: "Roboto", sans-serif;
+}
+
+.image-container2:hover .overlay {
+  opacity: 1;
+}
