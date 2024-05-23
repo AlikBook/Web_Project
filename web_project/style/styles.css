@@ -151,7 +151,17 @@ section img {
   display: flex;
   flex-direction: column;
   align-items: center;  
+  
+}
+
+.activities h4{
   text-decoration: underline;
+}
+
+.activities p{
+  margin-left: 22%;
+  margin-right: 22%;
+  text-align: justify;
 }
 
 .image-container2 {
@@ -187,7 +197,6 @@ section img {
 .image-container2:hover .overlay {
   opacity: 1;
 }
-
 /* About */
 
 .info_sam,
