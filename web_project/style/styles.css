@@ -197,6 +197,34 @@ section img {
 .image-container2:hover .overlay {
   opacity: 1;
 }
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 2% auto;
+
+
+  }
+
+  table th,
+  table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  table th {
+    background-color: #27c7d4;
+    color: white;
+  }
+
+  table td {
+    text-align: center;
+  }
+
+
 /* About */
 
 .info_sam,
