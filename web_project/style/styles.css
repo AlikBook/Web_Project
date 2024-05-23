@@ -15,7 +15,6 @@ h6 {
 nav {
   font-weight: bold;
   padding: 10px;
-
 }
 a {
   text-decoration: none;
@@ -38,7 +37,6 @@ header {
 .image-container {
   position: relative;
   width: 100%;
-
 }
 
 .image-container img {
@@ -65,36 +63,35 @@ footer {
 }
 
 #logo {
-    width: 150px;
-    height: 50px;
-    position: sticky;
-    max-width: 100%;
-    max-height: 100%;
-  }
-
+  width: 150px;
+  height: 50px;
+  position: sticky;
+  max-width: 100%;
+  max-height: 100%;
+}
 
 #logo:hover {
   transform: scale(1.1);
 }
 
-/* Reservations style*/ 
+/* Reservations */
 
 .form {
   font-family: "Roboto", sans-serif;
 }
 
-fieldset{
+fieldset {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 10px;
-  }
+}
 
-.form-presentation{
+.form-presentation {
   text-align: center;
 }
 
 input[type="submit"] {
-  background-color:#27c7d4; 
+  background-color: #27c7d4;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -102,50 +99,53 @@ input[type="submit"] {
   cursor: pointer;
   margin-top: 20px;
 }
-.button{
+.button {
   text-align: center;
-
 }
 
-fieldset input[type="text"], input[type="email"], input[type="tel"], input[type="date"]{ 
+fieldset input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
   width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-/*Home Ivan*/
 
+/* Home */
 
 hr.dotted {
   border-top: 3px dotted #bbb;
 }
 
-#section1{
+#section1 {
   justify-content: center;
   display: flex;
 }
-section p{
+section p {
   text-align: center;
   padding-left: 3%;
   padding-right: 3%;
 }
 
-#section2{
+#section2 {
   justify-content: center;
   display: flex;
 }
-section img{
+section img {
   width: 50%;
   height: auto;
   border-radius: 3%;
 }
-#list_home ol{
+#list_home ol {
   text-align: left;
 }
-#list_home ol li{
+#list_home ol li {
   padding: 1%;
 }
-/*Activities*/
+
+/* Activities */
 
 .activities {
   display: flex;
@@ -186,4 +186,31 @@ section img{
 
 .image-container2:hover .overlay {
   opacity: 1;
+}
+
+/* About */
+
+.info_sam,
+.info_ivan {
+  display: flex;
+  padding: 2%;
+}
+
+.about {
+  border: solid 2px #ccc; 
+  width: 70%;
+  margin: 2% auto; 
+}
+
+#samuel,
+#ivan {
+  width: 50px;
+  height: 150px;
+  border-radius: 3%;
+  margin-right: 4%;
+}
+
+#samuel:hover,
+#ivan:hover {
+  transform: scale(1.1);
 }
