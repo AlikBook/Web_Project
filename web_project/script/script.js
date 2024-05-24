@@ -24,3 +24,4 @@ function quizSubmit() {
         alert("Please fill in all the fields!");
     }
 }
+
