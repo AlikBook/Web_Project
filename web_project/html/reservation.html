@@ -38,7 +38,7 @@
       Paris, the tickets will be availiable once during 2 days.
     </p>
 
-    <form>
+    <form class="form">
       <fieldset>
         <h4 class="form">Choose 1 monuments:</h4>
         <input
@@ -53,9 +53,9 @@
           type="radio"
           id="monument3"
           name="monument"
-          value="Notre-Dame Cathedral"
+          value="Phantheon"
         />
-        <label for="monument3">Notre-Dame Cathedral</label><br />
+        <label for="monument3">Phantheon</label><br />
         <input
           type="radio"
           id="monument4"
@@ -81,15 +81,17 @@
         <input type="tel" id="phone" name="phone" /><br />
 
         <h4 class="form">Reservation Day 1 & 2:</h4>
-        <label for="date">Date:</label>
+        <label for="date1">Date:</label>
         <input type="date" id="date1" name="date1" /><br />
-        <label for="date">Date:</label>
+        <label for="date2">Date:</label>
         <input type="date" id="date2" name="date2" /><br />
         <div class="button">
-          <input type="submit" onclick="quizSubmit()" value="Send" />
+          <input type="submit" onclick="quizSubmit(event)" value="Send" />
         </div>
       </fieldset>
     </form>
+
+    <div id="information"></div>
 
     <footer>
       <a href="https://www.efrei.fr/">
