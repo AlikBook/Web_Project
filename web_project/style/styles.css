@@ -113,6 +113,21 @@ input[type="date"] {
   border-radius: 5px;
 }
 
+/*form Comment*/
+
+.comment{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.comment textarea{
+  width: 100%;
+  height: auto;
+  resize: none;
+}
+
+
+
 /* Home */
 
 hr.dotted {
@@ -145,6 +160,23 @@ section img {
   padding: 1%;
 }
 
+/*Forms comment*/
+.comment-section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+.comment-section h4 {
+  text-align: left;
+  margin: 0;
+}
+.comment-section p {
+  margin: 5px 0;
+}
+.dotted-line {
+  border-bottom: 1px dotted #ccc;
+  margin: 5px 0;
+}
 /* Activities */
 
 .activities {
@@ -250,3 +282,6 @@ section img {
 #ivan:hover {
   transform: scale(1.1);
 }
+
+
+
