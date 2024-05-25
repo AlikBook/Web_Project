@@ -69,3 +69,53 @@ function quizSubmit(event) {
     alert("Please fill in all the fields!");
   }
 }
+
+
+function submit_comment(event) {
+  event.preventDefault();
+  
+  var name = document.getElementById("name").value;
+  var comment = document.getElementById("comment").value;
+  
+  if (!name || !comment) {
+      alert("Please fill in both the name and comment fields.");
+      return;
+  }
+  var newComment = {
+      name: name,
+      comment: comment
+  };
+  var comments = JSON.parse(localStorage.getItem('comments')) || [];
+  comments.push(newComment);
+  localStorage.setItem('comments', JSON.stringify(comments));
+  displayComments();
+  document.getElementById("name").value = '';
+  document.getElementById("comment").value = '';
+}
+
+function displayComments() {
+  var comments = JSON.parse(localStorage.getItem('comments')) || [];
+  var savedCommentsElement = document.getElementById('savedComments');
+  savedCommentsElement.innerHTML = ''; 
+
+  comments.forEach(function(commentObj) {
+      
+      var commentSection = document.createElement('div');
+      commentSection.className = 'comment-section';
+      var nameElement = document.createElement('h4');
+      nameElement.textContent = 'User: ' + commentObj.name;
+      commentSection.appendChild(nameElement);
+      var dottedLine = document.createElement('div');
+      dottedLine.className = 'dotted-line';
+      commentSection.appendChild(dottedLine);
+      var commentElement = document.createElement('p');
+      commentElement.textContent = 'Comment: ' + commentObj.comment;
+      commentSection.appendChild(commentElement);
+      savedCommentsElement.appendChild(commentSection);
+  });
+}
+
+function clearComments() {
+  localStorage.removeItem('comments'); 
+  displayComments(); 
+}
