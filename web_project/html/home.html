@@ -16,7 +16,7 @@
     <script src="../script/script.js"></script>
   </head>
 
-  <body>
+  <body onload="displayComments()">
     <header>
       <nav>
         <a href="home.html">Home</a>
@@ -129,6 +129,27 @@
       </div>
     </section>
     <br />
+    <hr class="dotted" />
+    <h2>Traveler's Tales: Your Paris Experience</h2>
+    <div id="savedComments"></div>
+
+    <h2>Share Your Experience !</h2>
+    <form class="form" onsubmit="submit_comment(event)">
+      <fieldset class="comment">
+        <h4 class="form">Enter your name</h4>
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" /><br />
+        
+        <h4 class="form">Enter a commentary</h4>
+        <textarea class="text-box" id="comment" rows="10" cols="50" maxlength="500" placeholder="Write your comment here..."></textarea>
+        <div class="button">
+          <input type="submit" value="Send">
+        </div>
+      </fieldset>
+    </form>
+
+    
+
     <footer>
       <a href="https://www.efrei.fr/">
         <img src="../img/efrei.png" id="logo" alt="Efrei logo" /><br />
