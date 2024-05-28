@@ -139,16 +139,22 @@
         <h4 class="form">Enter your name</h4>
         <label for="name">Name :</label>
         <input type="text" id="name" name="name" /><br />
-        
+
         <h4 class="form">Enter a commentary</h4>
-        <textarea class="text-box" id="comment" rows="10" cols="50" maxlength="500" placeholder="Write your comment here..."></textarea>
+        <textarea
+          class="text-box"
+          id="comment"
+          rows="10"
+          cols="50"
+          maxlength="500"
+          placeholder="Write your comment here..."
+        ></textarea>
         <div class="button">
-          <input type="submit" value="Send">
+          <input type="submit" value="Send" />
+          <button type="button" onclick="clearComments()">Clear</button>
         </div>
       </fieldset>
     </form>
-
-    
 
     <footer>
       <a href="https://www.efrei.fr/">
