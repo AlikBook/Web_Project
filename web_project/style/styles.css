@@ -90,7 +90,8 @@ fieldset {
   text-align: center;
 }
 
-input[type="submit"] {
+input[type="submit"],
+button {
   background-color: #27c7d4;
   color: white;
   border: none;
@@ -115,18 +116,16 @@ input[type="date"] {
 
 /*form Comment*/
 
-.comment{
+.comment {
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-.comment textarea{
+.comment textarea {
   width: 100%;
   height: auto;
   resize: none;
 }
-
-
 
 /* Home */
 
@@ -182,15 +181,14 @@ section img {
 .activities {
   display: flex;
   flex-direction: column;
-  align-items: center;  
-  
+  align-items: center;
 }
 
-.activities h4{
+.activities h4 {
   text-decoration: underline;
 }
 
-.activities p{
+.activities p {
   margin-left: 22%;
   margin-right: 22%;
   text-align: justify;
@@ -230,31 +228,28 @@ section img {
   opacity: 1;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 2% auto;
+}
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 2% auto;
+table th,
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
 
+table th {
+  background-color: #27c7d4;
+  color: white;
+}
 
-  }
-
-  table th,
-  table td {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
-
-  table th {
-    background-color: #27c7d4;
-    color: white;
-  }
-
-  table td {
-    text-align: center;
-  }
+table td {
+  text-align: center;
+}
 
 /* About */
 
@@ -265,9 +260,9 @@ section img {
 }
 
 .about {
-  border: solid 2px #ccc; 
+  border: solid 2px #ccc;
   width: 70%;
-  margin: 2% auto; 
+  margin: 2% auto;
 }
 
 #samuel,
@@ -282,6 +277,3 @@ section img {
 #ivan:hover {
   transform: scale(1.1);
 }
-
-
-
